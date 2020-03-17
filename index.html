@@ -1,0 +1,336 @@
+<!doctype html>
+
+<html lang="sv">
+    <head>
+      <title>Bootstrap Hemsida</title>
+      <meta name="author" content="Max Ihrén">
+      
+      
+          <meta charset="utf-8">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <link href="https://fonts.googleapis.com/css?family=Francois+One|Satisfy&26display=swap" rel="stylesheet">
+ 
+       <style>
+       
+        @import url('https://fonts.googleapis.com/css?family=Fugaz+One&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+        body {
+                margin: 0;
+                padding: 0;
+                background-color: #eeeeee;
+                margin:auto;
+                padding:0;
+                font-family: 'Open Sans';
+           
+            }
+   
+            h1 {
+                font-family: 'Francois One', sans-serif;
+                color: white;
+                text-shadow: 1px;
+            }
+            
+            .jumbotron {
+                background-image: url('https://mitti.se/images/738235-650x.jpeg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center ;
+                height: 380px;
+            }
+
+           .jumbotext {
+                margin: 0 200px;
+                margin-top: 70px;
+                padding:0 60px;
+                border:10px solid white;
+                border-style:double;
+                border-radius: 5px;
+                line-height:0.4em;
+                background-color:rgb(255, 255, 255, 0.12);
+                transition: 0.3s all ease-in-out 0s;
+                overflow:hidden;
+       
+             }
+         
+            .jumbotext:hover {
+            
+                background-color:rgb(255, 255, 255, 0.2);
+                transform: scale(1.05);
+                transition: 0.3s all ease-in-out 0s;
+            
+             }
+         
+       
+       
+             .text {
+                color: #2285a1;
+                display:block;
+                font-size:65px;
+                text-transform:uppercase;
+                color:white;
+                padding-top:17px;
+                padding-bottom:10px;
+                font-weight:400;
+                font-family:'Fugaz One';
+                text-align:center;
+                transform:scale(1.0);
+                cursor:default;
+            }
+           
+           .button {
+               margin: -1px;
+                display: inline-block;
+                padding: 8px 60px;
+                font-size: 15px;
+                cursor: pointer;
+                text-align: center;
+                text-decoration: none;
+                outline: none;
+                color: #fff;
+                border: none;
+                border-radius: 6px;
+                box-shadow: 0 6px #999;
+           }
+           
+
+            .button:active {
+                box-shadow: 0 5px #666;
+                transform: translateY(4px);
+            }
+            
+            .like-container {
+                background-color: white;
+                height: 50px;
+            }
+  
+  
+  </style>
+</head>
+<body>
+    
+<!--HEADER-->
+<div class="jumbotron text-center" style="margin-bottom:0">
+        <div class=" lg-12 sm-6 jumbotext">
+            <h1 class =" sm-2 text">Bootstrap Hemsida</h1>
+        </div>
+         
+</div>
+<!--END OF HEADER-->
+
+<!--NAVBAR-->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <div class="navbar-header">
+                  <a class="navbar-brand" href="#">Ihréns Hemsida</a>
+            </div>
+                
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#">Hem</a></li>
+                  <li><a href="#">Inlägg</a></li>
+                  <li><a href="#">Kontakta mig</a></li>
+                </ul>
+                
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#"><span class="glyphicon glyphicon-user"></span> Registrera dig</a></li>
+                  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Logga in</a></li>
+                 </ul>
+   
+        </div>
+</nav><!--END OF NAVBAR-->
+
+<!--ARTICLE-->
+    <section class="container" style="margin-top:30px">
+         
+<!--LEFTSIDE BAR CONTENT-->
+           <div class="col-sm-4">
+              <h2>Tabell statistik</h2>
+              
+      <div class="row">
+      
+ <!--TABELL -->
+ 
+    <table class="table table-bordered table-striped table-hover">
+        <thead>
+             <tr>
+                 <td colspan="4">Best Baseball Players</td>
+             </tr>
+         </thead>
+         <tbody>
+            <tr>
+                <td class="col-md-2"></td>
+                <th class="text-center">Average</th>
+                <th class="text-center">RBIs</th>
+                <th class="text-center">Homeruns</th>
+            </tr>
+    
+            <tr>
+                <td><a href="#">Hank Aaron*</a></td>
+                <td>.305</td>
+                <td>2297</td>
+                <td>755</td>
+            </tr>
+            
+            <tr>
+                <td><a href="#">Babe Ruth*</a></td>
+                <td>.342</td>
+                <td>2214</td>
+                <td>714</td>
+            </tr>
+            
+            <tr>
+                <td><a href="#">Barry Bonds</a></td>
+                <td>.298</td>
+                <td>1996</td>
+                <td>762</td>
+            </tr>
+        </tbody>
+    </table>
+  
+ <!--CAROUSEL -->
+      
+<div style="translate(-10px, 10px);">
+  <h2>Carousel Example</h2>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="https://www.w3schools.com/bootstrap/chicago.jpg" alt="Los Angeles" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="https://www.w3schools.com/bootstrap/la.jpg" alt="Chicago" style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="https://www.w3schools.com/bootstrap/ny.jpg" alt="New york" style="width:100%;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+<!--END OF CAROUSEL-->
+
+               </div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+      
+<!--DROPDOWN-->
+      
+       <div class="dropdown">
+  <button style="padding:10px 50px;" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    <li><a href="#">HTML</a></li>
+    <li><a href="#">CSS</a></li>
+    <li><a href="#">JavaScript</a></li>
+  </ul>
+</div>
+<!--END OF DROPDOWN-->
+
+</div>
+<!--END OF ROW -->
+     
+</div>
+<!--END OF LEFTSIDE BAR CONTENT-->
+     
+    
+    
+<!--RIGHT SIDE CONTENT-->
+    <section class="col-sm-8">
+        
+    <!--WHALE-->
+      <h2>Val</h2>
+      <h5>Title description, Dec 7, 2019</h5>
+      
+              <!--BILD-->
+              <div class="img-container"><img class="img-thumbnail" alt="whale" src="https://images.unsplash.com/photo-1454991727061-be514eae86f7?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"></div>
+              
+              <!--ALERT-- DISPLAY:NONE-->
+                          <div class="alert alert-info alert-dismissible" style="display:none;" id="likebutton1">
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                    <strong>Info!</strong> Du gillar nu bilden.
+                        </div>
+                        
+            <!--LIKE BUTTON 1-->
+              <div style="col-sm-8 like-container:height: 19px;">
+                      <button onclick="likedimage1()" style="padding:10px 15px;" id="button" class="pull-right button btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Gilla <span class="glyphicon glyphicon-thumbs-up"></span></button></div>
+               
+               <!--TEXT   -->
+                     <p>Some text..</p>
+                     <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+              
+    <!--END OF WHALE-->
+      <br>
+     
+     <!--NEMO-->
+      
+          <h2>Nemo - Clownfisk</h2>
+          <h5>Title description, Sep 2, 2019</h5>
+             
+                <!--BILD-->
+              <div class="img-container"><img alt="nemo" src="https://images.unsplash.com/photo-1535591273668-578e31182c4f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"></div>
+              
+              <!--ALERT-- DISPLAY:NONE-->
+              <div class="alert alert-info alert-dismissible" style="display:none;" id="likebutton2">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                <strong>Info!</strong> Du gillar nu bilden.
+             </div>
+              
+              <!--LIKE BUTTON 2-->
+              <div style="col-sm-8 like-container:height: 19px;">
+                      <button onclick="likedimage2()" style="padding:10px 15px;" id="button" class="pull-right button btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Gilla <span class="glyphicon glyphicon-thumbs-up"></span>
+             </button>
+                  </div>
+                  
+            
+            <!--TEXT   -->
+              <p>Some text..</p>
+              <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            
+    
+  </section>
+<!--END OF RIGHT SIDE CONTENT-->
+  
+
+</section>
+<!--END OF ARTICLE-->
+
+<script>
+    function likedimage1() {
+        document.getElementById("likebutton1").style.display = "block";
+
+        
+    }
+</script>
+
+<script>
+    function likedimage2() {
+        document.getElementById("likebutton2").style.display = "block";
+
+        
+    }
+</script>
+
+</body>
+</html>
